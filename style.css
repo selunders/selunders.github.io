@@ -2,8 +2,6 @@ h1 {
     text-align: center;
     font-size: 5em;
     color: transparent;
-    /* background-color: #36b466; */
-    background-clip: text;
 }
 
 h2 {
@@ -26,50 +24,3 @@ body{
   background: #030321;
   font-family: Arial;
 }
-
-/* Ants */
-    svg {
-        display: block;
-        font: 5em 'Montserrat';
-        width: 960px;
-        height: 300px;
-        margin: 0 auto;
-    }
-
-    .text-copy {
-        fill: none;
-        stroke: white;
-        stroke-dasharray: 6% 29%;
-        stroke-width: 5px;
-        stroke-dashoffset: 0%;
-        animation: stroke-offset 5.5s infinite linear;
-    }
-
-    .text-copy:nth-child(1){
-        stroke: #20bf6b;
-        animation-delay: -1;
-    }
-
-    .text-copy:nth-child(2){
-        stroke: #1AD63C;
-        animation-delay: -2s;
-    }
-
-    .text-copy:nth-child(3){
-        stroke: #2ECC18;
-        animation-delay: -3s;
-    }
-
-    .text-copy:nth-child(4){
-        stroke: #18C7CC;
-        animation-delay: -4s;
-    }
-
-    .text-copy:nth-child(5){
-        stroke: #1AD6A7;
-        animation-delay: -5s;
-    }
-
-    @keyframes stroke-offset{
-        100% {stroke-dashoffset: -35%;}
-    }
