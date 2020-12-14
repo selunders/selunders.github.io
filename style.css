@@ -1,26 +1,20 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+.splash h1 {
+    font-family: 'Shadows Into Light', cursive;
     text-align: center;
     font-size: 5em;
     color: rgb(73, 199, 111);
-}
-
-h2 {
-    text-align: center;
-    font-size: 0.6em;
 }
 
 body {
     display: grid;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-html, body{
-  height: 100%;
-  font-weight: 800;
+body {
+    background: #fff;
+    font-family: Arial;
 }
 
-body{
-  background: #030321;
-  font-family: Arial;
+nav .item {
+    font-family: 'Shadows Into Light', cursive;
 }
