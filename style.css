@@ -1,21 +1,201 @@
+/*
+    Main color: 0a6548;
+    Link color: 0a6548;
+
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
-.splash h1 {
-    font-family: 'Shadows Into Light', cursive;
-    text-align: center;
-    font-size: 5em;
-    color: rgb(73, 199, 111);
-}
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
-body {
-    display: grid;
-}
+
+/* -------------------- */
+/* Page Setup */
+/* -------------------- */
+
 
 body {
     background: #fff;
-    font-family: Arial;
+    font-family: 'Karla', sans-serif;
+    color: #3a3a3a;
+    height: 200vh;
+}
+
+p {
+    line-height: 1.6;
+}
+
+section {
+    margin-top: 40px;
+}
+
+/* -------------------- */
+/* Buttons & Links */
+/* -------------------- */
+
+a {
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #595959;
+    /* color: #14C990; */
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0e8d65;
+    text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 8px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.2s;
+    vertical-align: middle;
+    box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #0984E3;
+    border: 2px solid #0984E3;
+    color: #fdfdfd;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 2px solid #0984E3;
+    color: #0984E3;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #043A63;
+    border-color: #043A63;
+    color: #FFF;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* -------------------- */
+/* Nav Bar */
+/* -------------------- */
+
+nav {
+    display: block;
+    width: 50%;
+    margin: 15px auto 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 nav .item {
-    font-family: 'Shadows Into Light', cursive;
+    /* display: flex-item; */
+    flex-grow: 0;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.3em;
+    min-width: 20%;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+nav li.active a {
+    color: #0a6548;
+}
+
+/* -------------------- */
+/* Splash */
+/* -------------------- */
+
+.splash h1 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 400;
+    /* color: #0a6548; */
+    color: #3a3a3a;
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+.splash hr {
+    width: 66.67%
+}
+
+hr.styled {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/* -------------------- */
+/* About Me Section */
+/* -------------------- */
+
+
+.card {
+    display: flex;
+    margin: 40px auto 0 auto;
+    width: 60%;
+}
+
+.card div + div {
+    margin-left: 5%;
+}
+
+.aboutMeInfo {
+    flex-grow: 1;
+}
+
+.headShot {
+    border-radius: 100%;
+    width: 300px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* -------------------- */
+/* About Me Section */
+/* -------------------- */
+
+.section__documents {
+
+}
+
+.document {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.docInfo {
+    display: inline-block;
+    width: 30%;
+}
+
+.docIframe {
+    display: inline-block;
+    flex-grow: 1;
+    height: 300px;
+    margin-left: 2%;
+}
+
+.docIframe iframe {
+    width: 100%;
+    height: 100%;
 }
