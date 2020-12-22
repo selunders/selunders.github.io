@@ -2,7 +2,7 @@
     Main color: 0a6548;
     Link color: 0a6548;
 
-
+    https://maketintsandshades.com/#14C990
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
@@ -18,8 +18,9 @@
 body {
     background: #fff;
     font-family: 'Karla', sans-serif;
+    font-size: 18px;
     color: #3a3a3a;
-    height: 200vh;
+    min-height: 100vh;
 }
 
 p {
@@ -116,7 +117,8 @@ nav .item {
 }
 
 nav li.active a {
-    color: #0a6548;
+    color: #0984E3;
+    /* color: #0a6548; */
 }
 
 /* -------------------- */
