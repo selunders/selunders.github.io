@@ -1,6 +1,6 @@
 /*
-    Main color: 0a6548;
-    Link color: 0a6548;
+    Main color: #0a6548;
+    Link color: #0a6548;
 
     https://maketintsandshades.com/#14C990
 */
@@ -9,26 +9,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
-
 /* -------------------- */
 /* Page Setup */
 /* -------------------- */
 
-
 body {
-    background: #fff;
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
-    color: #3a3a3a;
-    min-height: 100vh;
+	background: #fff;
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+	color: #3a3a3a;
+	min-height: 100vh;
 }
 
 p {
-    line-height: 1.6;
+	line-height: 1.6;
 }
 
 section {
-    margin-top: 40px;
+	margin-top: 40px;
 }
 
 /* -------------------- */
@@ -36,57 +34,58 @@ section {
 /* -------------------- */
 
 a {
-    transition: all 0.2s;
-    text-decoration: none;
+	transition: all 0.2s;
+	text-decoration: none;
 }
 
-a:link, a:visited {
-    color: #595959;
-    /* color: #14C990; */
-    text-decoration: none;
+a:link,
+a:visited {
+	color: #595959;
+	/* color: #14C990; */
+	text-decoration: none;
 }
 
-a:hover, a:active {
-    color: #0e8d65;
-    text-decoration: none;
+a:hover,
+a:active {
+	color: #043a63;
+	text-decoration: none;
 }
 
 .btn:link,
 .btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    margin-right: 8px;
-    font-weight: 400;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: all 0.2s;
-    vertical-align: middle;
-    box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.08);
-
+	display: inline-block;
+	padding: 10px 30px;
+	margin-right: 8px;
+	font-weight: 400;
+	text-decoration: none;
+	border-radius: 3px;
+	transition: all 0.2s;
+	vertical-align: middle;
+	box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #0984E3;
-    border: 2px solid #0984E3;
-    color: #fdfdfd;
+	background-color: #0984e3;
+	border: 2px solid #0984e3;
+	color: #fdfdfd;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 2px solid #0984E3;
-    color: #0984E3;
+	border: 2px solid #0984e3;
+	color: #0984e3;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #043A63;
-    border-color: #043A63;
-    color: #FFF;
+	background-color: #043a63;
+	border-color: #043a63;
+	color: #fff;
 }
 
 .btn:active {
-    transform: scale(0.97);
+	transform: scale(0.97);
 }
 
 /* -------------------- */
@@ -94,31 +93,31 @@ a:hover, a:active {
 /* -------------------- */
 
 nav {
-    display: block;
-    width: 50%;
-    margin: 15px auto 0 auto;
+	display: block;
+	width: 50%;
+	margin: 15px auto 0 auto;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav .item {
-    /* display: flex-item; */
-    flex-grow: 0;
-    list-style-type: none;
-    text-align: center;
-    line-height: 1.4;
-    font-size: 1.3em;
-    min-width: 20%;
-    transition: all 0.2s;
-    text-transform: uppercase;
+	/* display: flex-item; */
+	flex-grow: 0;
+	list-style-type: none;
+	text-align: center;
+	line-height: 1.4;
+	font-size: 1.3em;
+	min-width: 20%;
+	transition: all 0.2s;
+	text-transform: uppercase;
 }
 
 nav li.active a {
-    color: #0984E3;
-    /* color: #0a6548; */
+	color: #0984e3;
+	/* color: #0a6548; */
 }
 
 /* -------------------- */
@@ -126,78 +125,72 @@ nav li.active a {
 /* -------------------- */
 
 .splash h1 {
-    text-align: center;
-    font-size: 5em;
-    font-weight: 400;
-    /* color: #0a6548; */
-    color: #3a3a3a;
-    font-family: 'Dawning of a New Day', cursive;
+	text-align: center;
+	font-size: 5em;
+	font-weight: 400;
+	/* color: #0a6548; */
+	color: #3a3a3a;
+	font-family: 'Dawning of a New Day', cursive;
 }
 
 .splash hr {
-    width: 66.67%
+	width: 66.67%;
 }
 
 hr.styled {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-
 
 /* -------------------- */
 /* About Me Section */
 /* -------------------- */
 
-
 .card {
-    display: flex;
-    margin: 40px auto 0 auto;
-    width: 60%;
+	display: grid;
+    grid-template-areas: "a b b" 
+                         "c b b";
+	margin: 40px auto 0 auto;
+	width: 60%;
 }
 
 .card div + div {
-    margin-left: 5%;
+	margin-left: 5%;
 }
 
 .aboutMeInfo {
-    flex-grow: 1;
+	grid-area: b;
 }
 
 .headShot {
-    border-radius: 100%;
-    width: 300px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    grid-area: a;
 }
 
+.headShot img {
+    border-radius: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    width: 100%;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+}
 
 /* -------------------- */
 /* About Me Section */
 /* -------------------- */
 
-.section__documents {
-
-}
-
-.document {
-    display: flex;
-    margin: 0 auto;
-    width: 60%;
-}
 
 .docInfo {
-    display: inline-block;
-    width: 30%;
+	grid-area: c;
+	/* width: 30%; */
 }
 
 .docIframe {
-    display: inline-block;
-    flex-grow: 1;
-    height: 300px;
-    margin-left: 2%;
+	display: block;
+	height: 500px;
 }
 
 .docIframe iframe {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
