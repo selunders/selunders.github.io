@@ -105,7 +105,6 @@ nav ul {
 }
 
 nav .item {
-	/* display: flex-item; */
 	flex-grow: 0;
 	list-style-type: none;
 	text-align: center;
@@ -157,15 +156,9 @@ hr.styled {
 	max-width: 1080px;
 }
 
-.aboutMeInfo {
-	grid-area: b;
-}
 
-.headShot {
-    grid-area: a;
-}
 
-.headShot img {
+.headshot img {
     border-radius: 100%;
     min-width: 200px;
     max-width: 300px;
@@ -179,11 +172,21 @@ hr.styled {
 
 .section__aboutMe {
 	display: grid;
+	grid-auto-columns: 1fr;
+	grid-auto-flow: column;
     grid-template-areas: "a b b" 
-                         "c b b";
+						 "c b b";
 	margin: 40px auto 0 auto;
 	width: 80%;
 	max-width: 1080px;
+}
+
+.aboutMeWelcome {
+	grid-area: a;
+}
+
+.aboutMeInfo {
+	grid-area: b;
 }
 
 .docInfo {
@@ -197,7 +200,7 @@ hr.styled {
 	height: 500px;
 }
 
-.docIframe iframe {
+.docIframe embed {
 	width: 100%;
 	height: 100%;
 }
