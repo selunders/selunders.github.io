@@ -94,7 +94,8 @@ a:active {
 
 nav {
 	display: block;
-	width: 50%;
+	width: 90%;
+	max-width: 900px;
 	margin: 15px auto 0 auto;
 }
 
@@ -152,11 +153,8 @@ hr.styled {
     grid-template-areas: "a b b" 
                          "c b b";
 	margin: 40px auto 0 auto;
-	width: 60%;
-}
-
-.card div + div {
-	margin-left: 5%;
+	width: 80%;
+	max-width: 1080px;
 }
 
 .aboutMeInfo {
@@ -179,11 +177,20 @@ hr.styled {
 /* About Me Section */
 /* -------------------- */
 
+.section__aboutMe {
+	display: grid;
+    grid-template-areas: "a b b" 
+                         "c b b";
+	margin: 40px auto 0 auto;
+	width: 80%;
+	max-width: 1080px;
+}
 
 .docInfo {
 	grid-area: c;
 	/* width: 30%; */
 }
+
 
 .docIframe {
 	display: block;

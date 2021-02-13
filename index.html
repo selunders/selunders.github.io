@@ -9,6 +9,7 @@
     <!-- Normalize.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
 </head>
 
 <body>
@@ -25,13 +26,8 @@
         <!-- <hr class="styled"> -->
     </div>
     <section class="section__aboutMe">
-        <div class="card">
             <div class="headShot">
                 <img src="resources/img/profile.jpg" alt="Photo of me">
-            </div>
-            <div class="docInfo">
-                <h2 class="docTitle">Resume</h2>
-                <a download href="resources/documents/resume_web.pdf" class="btn btn-ghost"><ion-icon name="cloud-download-outline"></ion-icon>&nbsp;&nbsp;Download</a>
             </div>
             <div class="aboutMeInfo">
                 <h2>Hello!</h2>
@@ -40,7 +36,10 @@
                     <iframe src="resources/documents/resume_web.pdf"></iframe>
                 </div>
             </div>
-        </div>
+            <div class="docInfo">
+                <h2 class="docTitle">Resume</h2>
+                <a download href="resources/documents/resume_web.pdf" class="btn btn-ghost"><ion-icon name="cloud-download-outline"></ion-icon>&nbsp;&nbsp;Download</a>
+            </div>
     </section>
     
     <section class="section__documents">
