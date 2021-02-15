@@ -200,7 +200,7 @@ hr.styled {
 	height: 500px;
 }
 
-.docIframe embed {
+.docIframe object {
 	width: 100%;
 	height: 100%;
 }
