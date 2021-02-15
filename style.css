@@ -206,7 +206,7 @@ hr.styled {
 	max-height: 500px;
 }
 
-.docIframe iframe {
+.docIframe object {
 	width: 100%;
 	height: 100%;
 }
