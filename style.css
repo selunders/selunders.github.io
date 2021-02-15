@@ -203,7 +203,7 @@ hr.styled {
 
 .docIframe {
 	display: block;
-	max-height: 500px;
+	height: 450px;
 }
 
 .docIframe object {
