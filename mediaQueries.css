@@ -19,9 +19,6 @@
         display: block;
         margin: 0 auto;
     }
-    .docIframe {
-        display: none;
-    }
 }
 
 @media(max-width: 480px){
