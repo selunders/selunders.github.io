@@ -3,14 +3,57 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hello! | SethLunders</title>
+    <title>Hello! | Seth Lunders</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
 </head>
 
 <body>
-    <script src="" async defer></script>
+    <div class="splash">
+        <h1>Seth Lunders</h1>
+        <hr class="styled">
+        <nav>
+            <ul>
+                <li class="item"><a href="#">Web Development</a></li>
+                <li class="item active"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Sample Programs</a></li>
+            </ul>
+        </nav>
+        <!-- <hr class="styled"> -->
+    </div>
+    <section class="section__aboutMe">
+        <div class="headshot">
+            <img src="resources/img/profile.jpg" alt="Photo of me">
+        </div>
+        <div class="aboutMeInfo">
+            <div>
+                <h2>Hello!</h2>
+                <p>My name is Seth Lunders, and I'm a Computer Science student at the University of Idaho, going into my third year. Thanks for visiting my website, check back soon for more content!</p>
+            </div>
+            <div class="docIframe hide">
+                <object data="resources/documents/resume_web.pdf">
+                    <p>Your browser doesn't seem to support embedded PDFs! <a download href="resources/documents/resume_web.pdf">Click here to download my resume instead.</a></p>
+                </object>
+            </div>
+        </div>
+        <div class="docInfo hide">
+            <h2 class="docTitle">Resume</h2>
+            <a download href="resources/documents/resume_web.pdf" class="btn btn-ghost">
+                <ion-icon name="cloud-download-outline"></ion-icon>&nbsp;&nbsp;Download
+            </a>
+        </div>
+    </section>
+
+    <section class="section__documents">
+    </section>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
 </body>
 
 </html>
