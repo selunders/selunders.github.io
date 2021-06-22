@@ -1,0 +1,28 @@
+@media(max-width: 1080px) {
+    .section__aboutMe {
+        width: 90%;
+        max-width: 100%;
+        grid-template-areas: "a"
+                             "b"
+                             "c";
+    }
+}
+
+@media(min-width: 1080px) {
+    .aboutMeInfo {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 850px){
+    .headshot img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 480px){
+    nav ul {
+        flex-direction: column;
+    }
+}
