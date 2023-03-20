@@ -1,0 +1,158 @@
+body {
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 18px;
+    background-color: #283030;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1080px;
+    display: grid;
+    grid:
+        "h h"
+        "m m"
+        "f f";
+}
+
+header {
+    grid-area: h;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h2 {
+    color:rgb(0, 209, 174);
+    font-size: 3.5em;
+    /* font-family: Silkscreen, sans-serif; */
+    text-align: center;
+    font-weight: 400;
+    /* vertical-align: center; */
+    /* flex-basis: 300px; */
+}
+
+main {
+    /* background-color: maroon; */
+    grid-area: m;
+}
+
+main.home {
+    display: grid;
+    grid:
+        "a a b";
+}
+
+section.me {
+    grid-area: a;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+section.me img {
+    max-width: 200px;
+    border-radius: 100%;
+    margin: 30px 0 30px 0;
+}
+
+section.about {
+    grid-area: b;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+aside {
+    display: none;
+    grid-area: s;
+    /* background-color: salmon; */
+}
+
+footer {
+    grid-area: f;
+    /* background-color: forestgreen; */
+}
+
+nav {
+    /* height: 100%; */
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-direction: row;
+}
+
+nav ul li {
+    display: flex;
+    margin-left: 10px;
+    line-height: 1.4;
+    /* vertical-align: middle; */
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+a {
+    color: rgb(0, 209, 174);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a img{
+    color: rgb(0, 209, 174);
+}
+
+a:link, a:visited{
+    color: rgb(0, 209, 174);
+}
+
+a:hover, a:active{
+    color: rgb(0, 3, 209);
+}
+
+ion-icon {
+    transition: color 0.2s;
+    /* font-weight: bold; */
+}
+
+a.logo-instagram:hover,
+a.logo-instagram:active {
+    color: #E1306C;
+}
+
+a.mail-outline:hover,
+a.mail-outline:active {
+    color: #2fb3ff;
+}
+
+a.logo-github:hover,
+a.logo-github:active {
+    color: #171515;
+}
+
+.social-icon {
+    font-size: 1.7em;
+    margin-left: 10px;
+}
+
+/* ---------- */
+/* Footer */
+/* ---------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
