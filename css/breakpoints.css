@@ -1,0 +1,18 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+
+}
+
+/* Screens 768px to 991px wide (phones in landscape mode, small tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* up to 767px wide (phones in portrait mode) */
+@media only screen and (max-width: 767px) {
+    main.home {
+        grid:
+            "a"
+            "b";
+    }
+}
