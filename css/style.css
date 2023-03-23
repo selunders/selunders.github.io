@@ -20,8 +20,7 @@ header {
     /* background-color: antiquewhite; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
 }
 
 header h2 {
@@ -45,6 +44,14 @@ main.home {
         "a a b";
 }
 
+main.project {
+    margin-top: 30px;
+    display: grid;
+    grid:
+        "a"
+        "b";
+}
+
 section.me {
     grid-area: a;
     /* background-color: red; */
@@ -59,6 +66,17 @@ section.me img {
     border-radius: 100%;
     margin: 30px 0 30px 0;
 }
+
+section.info {
+    grid-area: a;
+    /* background-color: red; */
+}
+
+section.info p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 section.about {
     grid-area: b;
@@ -79,29 +97,26 @@ footer {
     /* background-color: forestgreen; */
 }
 
-/* nav {
-    height: 100%;
-} */
-
-/* nav ul { */
+nav {
     /* height: 100%; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    /* flex-direction: row; */
-/* } */
+}
 
-
-.social-icons {
+nav ul {
+    height: 100%;
     display: flex;
-    /* margin-left: 10px; */
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-direction: row;
+}
+
+nav ul li {
+    display: flex;
+    margin-left: 10px;
     line-height: 1.4;
     /* vertical-align: middle; */
-    /* align-items: center; */
-    justify-content: space-between;
-    width: 100%;
-    max-width: 150px;
+    align-items: center;
+    justify-content: center;
 }
 
 ul li {
@@ -145,10 +160,9 @@ a.logo-github:active {
     color: #171515;
 }
 
-
 .social-icon {
     font-size: 1.7em;
-    /* margin-left: 10px; */
+    margin-left: 10px;
 }
 
 /* ---------- */
@@ -160,4 +174,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+footer p {
+    margin: 20px;
 }
