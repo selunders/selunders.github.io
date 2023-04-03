@@ -5,6 +5,7 @@ body {
     background-color: #283030;
     color: white;
     min-height: 100vh;
+    line-height: 1.5;
     width: 100%;
     margin: 0 auto;
     max-width: 1080px;
@@ -13,6 +14,10 @@ body {
         "h h"
         "m m"
         "f f";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
 }
 
 header {
@@ -124,9 +129,10 @@ ul li {
 }
 
 a {
-    color: rgb(0, 209, 174);
+    color: #00d1ae;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: all 0.4s;
+    transition-timing-function: steps(4, jump-end);
 }
 a img{
     color: rgb(0, 209, 174);
@@ -137,7 +143,7 @@ a:link, a:visited{
 }
 
 a:hover, a:active{
-    color: rgb(0, 3, 209);
+    color: rgb(7, 171, 221);
 }
 
 ion-icon {
@@ -165,6 +171,41 @@ a.logo-github:active {
     margin-left: 10px;
 }
 
+a.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    width:fit-content;
+    border: 2px solid #00d1ae;
+}
+
+a.btn_full {
+    background-color: #00d1ae;
+    color: #333333;
+}
+
+a.btn_ghost {
+    background-color: #00000000;
+    color: #00d1ae;
+    border: 2px solid #00d1ae;
+}
+
+a.btn:hover {
+    color: white;
+    background-color: #333;
+    border: 2px solid white;
+    transform: scale(1.02);
+}
+
+a.btn:active {
+    color: #bbb;
+    border: 2px solid #bbb;
+    transform: translateY(-2px);
+    transform: scale(1.02);
+    transition: all 0.2s;
+    transition-timing-function: steps(8, jump-end);
+}
 /* ---------- */
 /* Footer */
 /* ---------- */
