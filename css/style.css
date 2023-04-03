@@ -178,6 +178,7 @@ a.btn {
     border-radius: 2px;
     width:fit-content;
     border: 2px solid #00d1ae;
+    text-align: center;
 }
 
 a.btn_full {
