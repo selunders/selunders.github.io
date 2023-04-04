@@ -268,7 +268,7 @@ section.in_depth div {
 }
 
 section.in_depth img {
-    max-width: 48%;
+    width: 48%;
 }
 
 .right {
