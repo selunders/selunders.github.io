@@ -1,9 +1,9 @@
 body {
     /* font-family: 'Nunito', sans-serif; */
     font-family: 'Silkscreen', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #283030;
-    color: white;
+    color: rgb(222, 222, 222);
     min-height: 100vh;
     line-height: 1.5;
     width: 100%;
@@ -11,13 +11,19 @@ body {
     max-width: 1080px;
     display: grid;
     grid:
-        "h h"
-        "m m"
-        "f f";
+    "h h"
+    "m m"
+    "f f";
 }
 
 h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Silkscreen', sans-serif; */
     font-weight: 300;
+    color:rgb(0, 209, 174);
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 header {
@@ -30,7 +36,7 @@ header {
 
 header h2 {
     color:rgb(0, 209, 174);
-    font-size: 3.5em;
+    font-size: 3em;
     /* font-family: Silkscreen, sans-serif; */
     text-align: center;
     font-weight: 400;
@@ -124,6 +130,31 @@ nav ul li {
     justify-content: center;
 }
 
+main.home ul {
+    padding: 0;
+    margin: 0;
+}
+
+main.home a.project_link {
+    padding: 10px;
+    background-color: #283030;
+    border: 2px solid #00d1ae;
+    color: white;
+    width: 0%;
+    min-width: fit-content;
+    transition: transform 0.3s;
+    transition-timing-function: steps(4, jump-end);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+main.home a.project_link:hover {
+    color:rgb(0, 209, 174);
+    z-index: 1;
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 0px 0px #00d1ae;
+}
+
 ul li {
     list-style-type: square;
 }
@@ -167,7 +198,7 @@ a.logo-github:active {
 }
 
 .social-icon {
-    font-size: 1.7em;
+    font-size: 2em;
     margin-left: 10px;
 }
 
@@ -220,4 +251,32 @@ footer {
 
 footer p {
     margin: 20px;
+}
+
+section.in_depth {
+    /* padding: 10px 20px; */
+    width: 85%;
+    margin: 0 auto;
+}
+
+section.in_depth div {
+    position: relative;
+    display: block;
+    /* height: auto; */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+section.in_depth img {
+    max-width: 48%;
+}
+
+.right {
+    float: right;
+    padding-left: 2%;
+}
+
+.left {
+    float: left;
+    padding-right: 2%;
 }
