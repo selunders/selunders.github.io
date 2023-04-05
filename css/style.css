@@ -3,7 +3,7 @@ body {
     font-family: 'Silkscreen', sans-serif;
     font-size: 16px;
     background-color: #283030;
-    color: rgb(222, 222, 222);
+    color: #dedede;
     min-height: 100vh;
     line-height: 1.5;
     width: 100%;
@@ -139,7 +139,7 @@ main.home a.project_link {
     padding: 10px;
     background-color: #283030;
     border: 2px solid #00d1ae;
-    color: white;
+    color: #dedede;
     width: 0%;
     min-width: fit-content;
     transition: transform 0.3s;
@@ -224,9 +224,9 @@ a.btn_ghost {
 }
 
 a.btn:hover {
-    color: white;
+    color: #dedede;
     background-color: #333;
-    border: 2px solid white;
+    border: 2px solid #dedede;
     transform: scale(1.02);
 }
 
@@ -276,7 +276,18 @@ section.in_depth img {
     padding-left: 2%;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .left {
     float: left;
     padding-right: 2%;
+}
+
+video {
+    width: 50%;
+    margin: 0 auto;
+    /* width: 795px; */
+    /* height: 720px; */
 }

@@ -20,6 +20,7 @@
     section.in_depth h2, section.in_depth p {
         padding: 10px 15px;
     }
+
 }
 
 /* up to 767px wide (phones in portrait mode) */
@@ -28,12 +29,15 @@
         grid:
             "a"
             "b";
-    }
+        }
     main.home section.me {
         padding-left: 2px;
         padding-right: 2px;
     }
     main.home a.project_link {
+        width: 100%;
+    }
+    video {
         width: 100%;
     }
 }
