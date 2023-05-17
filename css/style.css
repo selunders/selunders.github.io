@@ -197,6 +197,11 @@ a.logo-github:active {
     color: #171515;
 }
 
+a.logo-linkedin:hover,
+a.logo-linkedin:active {
+    color: #0A66C2;
+}
+
 .social-icon {
     font-size: 2em;
     margin-left: 10px;
