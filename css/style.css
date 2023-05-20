@@ -83,6 +83,10 @@ section.info {
     /* background-color: red; */
 }
 
+section.info img {
+    margin: 0 auto;
+}
+
 section.info p {
     padding-left: 20px;
     padding-right: 20px;
